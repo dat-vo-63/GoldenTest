@@ -64,7 +64,7 @@ public class ItemController {
     }
 
     @PostMapping("/getShoesById")
-    public Item getItem(@RequestBody Map<String, Integer> map) {
+    public boolean getItem(@RequestBody Map<String, Integer> map) {
         return cardIService.getItemById(map.get("id"));
     }
 }

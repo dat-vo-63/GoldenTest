@@ -94,9 +94,14 @@ public class ShoppingCardServiceImp implements ShoppingCardIService{
     }
 
     @Override
-    public Item getItemById(int id) {
+    public boolean getItemById(int id) {
 
-        return items.get(id);
+        Item item = items.get(id);
+        if(item == null)
+        {
+            return false;
+        }
+        else return true;
     }
 
 

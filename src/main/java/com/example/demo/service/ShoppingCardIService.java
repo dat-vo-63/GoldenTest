@@ -41,5 +41,5 @@ public interface ShoppingCardIService {
      * Lấy tổng số tiền tất cả các mặt hàng trong giỏ
      */
     double getAmount();
-    Item getItemById(int id);
+    boolean getItemById(int id);
 }
